@@ -23,10 +23,8 @@
 - C++
 
 - Python
-
-- Tensorflow(for C: Partically uses Ubuntu OS)
-
-- OpenCV
+ - Tensorflow(for C: Partically uses Ubuntu OS)
+ - OpenCV
 
 - Arduino
 
@@ -34,8 +32,6 @@
 
 
 ## 데일리 개발 진척도(나중에 바꾸기)
-### Day 1(12/27) - 어쩌구
-뫧손댜손대손댜소ㅑ
-### Day 2(12/28) - 저쩌구
-ㅁ노대샤ㅗㄴㄷㅅ놋
-### Day 3(12/29) 
+### Day 1(12/27)
+### Day 2(12/28)
+### Day 3(12/29)
