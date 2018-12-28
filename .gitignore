@@ -102,3 +102,21 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+\.vs/AINOMOK/v15/
+
+src/\.vs/AINOMOK/v15/
+
+src/AINOMOK/\.vs/AINOMOK/v15/
+
+x64/Debug/
+
+*.vcxproj
+
+*.filters
+
+*.user
+
+src/AINOMOK/x64/Debug/
+
+*.sln
