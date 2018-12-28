@@ -23,15 +23,15 @@
 - C++
 
 - Python
- - Tensorflow(for C: Partically uses Ubuntu OS)
- - OpenCV
+  - Tensorflow(for C: Partically uses Ubuntu OS)
+  - OpenCV
 
 - Arduino
 
 - 3D Printing & Modeling
 
 
-## 데일리 개발 진척도(나중에 바꾸기)
-### Day 1(12/27)
+## 데일리 진척도
+### Day 1(12/27) - 계획서 수정 및 개발 과정 설계
 ### Day 2(12/28)
 ### Day 3(12/29)
