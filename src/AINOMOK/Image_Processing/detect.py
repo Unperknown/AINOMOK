@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-sensitivity = 85
 ESC = 27
 lowerWhite = np.array([0,0,195])
 upperWhite = np.array([255,75,255])
@@ -24,5 +23,4 @@ if __name__ == '__main__':
 		c = cv2.waitKey(10)
 		if c == ESC:
 			break
-
 	cv2.destroyAllWindows()
