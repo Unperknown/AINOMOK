@@ -1,10 +1,9 @@
 import cv2
 import numpy as np
 
-sensitivity = 70
 ESC = 27
-lowerWhite = np.array([0,0,185])
-upperWhite = np.array([255,70,255])
+lowerWhite = np.array([0,0,195])
+upperWhite = np.array([255,75,255])
 
 lowerBlack = np.array([0,0,0])
 upperBlack = np.array([360,360,60])
@@ -23,11 +22,13 @@ if __name__ == '__main__':
 		resultB = cv2.bitwise_and(hsv, hsv, mask=maskB)
 		# show result & compare with original frame
 		cv2.imshow('Before', frame)
-		cv2.imshow('White', resultW)
-		cv2.imshow('Black', resultB)
+		np.hstack((resultW, resultB))
+		result = np.concatenate((resultW, resultB), axis=1)
+		cv2.imshow('Result', result)
 		
 		# close when ESC pressed
 		c = cv2.waitKey(10)
 		if c == ESC:
 			break
 	cv2.destroyAllWindows()
+
