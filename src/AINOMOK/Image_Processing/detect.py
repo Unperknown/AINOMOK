@@ -25,5 +25,4 @@ if __name__ == '__main__':
 		c = cv2.waitKey(10)
 		if c == ESC:
 			break
-
 	cv2.destroyAllWindows()
