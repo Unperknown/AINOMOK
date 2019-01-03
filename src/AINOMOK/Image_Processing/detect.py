@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
 
-sensitivity = 70
 ESC = 27
-lowerWhite = np.array([0,0,255 - sensitivity])
-upperWhite = np.array([255,sensitivity,255])
+lowerWhite = np.array([0,0,195])
+upperWhite = np.array([255,75,255])
 
 lowerBlack = np.array([0,0,0])
-upperBlack = np.array([360,360,115])
+upperBlack = np.array([360,360,60])
 
 if __name__ == '__main__':
 	capture = cv2.VideoCapture(1)
