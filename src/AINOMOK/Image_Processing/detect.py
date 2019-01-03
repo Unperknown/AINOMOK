@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
 
-sensitivity = 85
 ESC = 27
-lowerWhite = np.array([0,0,255 - sensitivity])
-upperWhite = np.array([255,sensitivity,255])
+lowerWhite = np.array([0,0,195])
+upperWhite = np.array([255,75,255])
 
 lowerBlack = np.array([0,0,0])
-upperBlack = np.array([180,255,30])
+upperBlack = np.array([360,360,60])
 
 if __name__ == '__main__':
 	capture = cv2.VideoCapture(1)
@@ -21,7 +20,6 @@ if __name__ == '__main__':
 		cv2.imshow('Before', frame)
 		cv2.imshow('White', resultW)
 		cv2.imshow('Black', resultB)
-		
 		c = cv2.waitKey(10)
 		if c == ESC:
 			break
