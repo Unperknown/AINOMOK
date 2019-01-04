@@ -37,7 +37,7 @@
 
 ### Others
 - [🔗Las-Wonho](https://github.com/Las-Wonho)
-- [cdb0915](https://github.com/cdb0915)
+- [🔗cdb0915](https://github.com/cdb0915)
 
 ## 🔑Stack
 
