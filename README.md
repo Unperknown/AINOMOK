@@ -8,7 +8,7 @@
 
 2016년에 성행한 알파고와 이세돌과의 경기 모습에서 영감를 받아 오목을 두는 기계와 사람이 오목 게임을 할 수 있도록 한다. 기계는 인공지능이 내장된 데스크탑과 통신하여 실제 고수와 같이 게임하는 것 같이 구현하였다.
 
-구현을 위한 영상 처리 기술과 인공 지능은 Python 라이브러리 OpenCV와 Tensorflow를 사용해 작성하였으며 기계 제어와 통신 프로세스는 C++로 작성하였다. 물리적 설계는 3D 모델링 툴 을 사용하였다. 
+구현을 위한 영상 처리 기술과 인공 지능은 Python 라이브러리 OpenCV와 Tensorflow를 사용해 작성하였으며 기계 제어와 통신 프로세스는 Python으로 작성하였다. 물리적 설계는 3D 모델링 툴 을 사용하였다. 
 
 ## 📊Purpose
 
@@ -31,17 +31,15 @@
 ## 👪Contributors
 
 ### Project Group
-- [🔗Unperknown](https://github.com/Unperknown)
-- [🔗asphalt-alpha](https://github.com/asphalt-alpha)
-- [🔗ohseyoung123](https://github.com/ohseyoung123)
+- [🔗Unperknown](https://github.com/Unperknown) : Image Processing, AI Development
+- [🔗asphalt-alpha](https://github.com/asphalt-alpha) : Assembling Robot, 3D Modeling
+- [🔗ohseyoung123](https://github.com/ohseyoung123) : Arduino Programming
 
 ### Others
-- [🔗Las-Wonho](https://github.com/Las-Wonho)
-- [🔗cdb0915](https://github.com/cdb0915)
+- [🔗Las-Wonho](https://github.com/Las-Wonho) : Correction of document(README.md)
+- [🔗cdb0915](https://github.com/cdb0915) : Arduino Programming Assistant
 
 ## 🔑Stack
-
-- C++
   
 - Python
   - Tensorflow(for C: Partically uses Ubuntu OS)
@@ -97,3 +95,13 @@ RL 모델: 시간 내에 구현하지 못할 가능성을 방지하기 위해 �
 ##### 3. asphalt-alpha - 3D Modeling
 
 부품을 모델링하였다. 저장소에 커밋하고 나머지 필요한 부품을 추가로 더 할 것이다.
+
+### Day 6 ~ Day 8(1/4 ~ 1/6) - 개발 수행 및 테스트
+
+##### 1. cdb0915 - Assistance of Arduino Programming
+
+시리얼 통신을 구현을 검증하는 중에 ohseyoung123과의 협의를 거쳐 기술 한계 상 Python으로 재작성하자고 결정하였다.(1/4) 그래서 ohseyoung123이 작성한 소스 파일을 리뷰하고 현재 오목 제어 프로그램과 시리얼 통신 프로그램을 합치는 작업을 진행하고 있다.
+
+##### 2. Unperknown - AI Development and Omok Program
+
+하드웨어 안의 오목판의 상태를 담은 데이터를 가져와 현재 Round의 승리 여부를 확인하고 턴을 돌리는 제어 프로그램을 작성하였다.(12/28) 그 제어 프로그램에서 영상 처리를 통해 플레이어가 둔 돌의 좌표를 가져오는 메서드와 AI 모델을 실행하여 좌표를 가져오는 메서드는 현재 작업 중이다. 현재 모델이 훈련이 아직 되지 않았고 생겨난 버그를 수정하고 있다. (1/2 ~) 저번에 언급한 대로 내일(1/6)에 영상 처리를 통해 좌표를 불러오는 메서드를 실제 하드웨어에 연결해 테스트할 예정이다. 그러면서 그 메서드 소스 파일을 커밋할 것이다.
