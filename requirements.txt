@@ -3,3 +3,4 @@ numpy
 matplotlib
 easyAI
 tensorflow==1.5.0
+pySerial
